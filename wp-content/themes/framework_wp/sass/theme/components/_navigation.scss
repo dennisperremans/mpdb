@@ -1,0 +1,25 @@
+.navbar {
+	background: $black--lighter;
+	font-family: $secondary-font;
+	font-weight: bold;
+
+	&__brand {
+		background-image: url('../img/logo.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+		height: 40px;
+		overflow: hidden;
+		position: relative;
+		text-indent: -99999px;
+		width: 40px;
+
+		@include transition(all, .2s, linear);
+
+		&:hover {
+			background-image: url('../img/logo--hover.png');
+			transform: scale(1.05);
+		}
+	}
+}

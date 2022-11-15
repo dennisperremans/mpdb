@@ -1,0 +1,15 @@
+.gigs-played {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@include media-breakpoint-up(md) {
+		flex-direction: row;
+	}
+
+	&__item {
+		flex-basis: 49%;
+		margin-bottom: 1rem;
+	}
+}

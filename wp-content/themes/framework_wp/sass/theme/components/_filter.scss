@@ -1,0 +1,58 @@
+.filter {
+	&__wrapper {
+		background-color: transparent;
+		border: 1px solid rgba(118,142,198,.25);
+		padding: 1rem .5rem;
+	}
+
+	&__item {
+		border-bottom: 1px solid rgba(118,142,198,.25);
+		padding: .5rem 0;
+
+		&__label {
+			color: $black;
+			cursor: pointer;
+			display: block;
+			font-size: .9rem;
+			font-weight: 700;
+			position: relative;
+			width: 100%;
+
+			&:after {
+				content: '\f078';
+				font-family: $icon-font-family;
+				font-size: .75rem;
+				position: absolute;
+				right: 0;
+				top: 0;
+
+				@include transition(all, .2s, linear);
+			}
+
+			&.active {
+				&:after {
+					content: '\f077';
+				}
+			}
+		}
+
+		&__choice {
+			display: none;
+			font-size: 12px;
+			margin-top: .5rem;
+		}
+
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.facetwp-dropdown {
+		width: 100%;
+	}
+}

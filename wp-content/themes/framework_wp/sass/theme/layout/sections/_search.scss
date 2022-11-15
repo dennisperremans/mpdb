@@ -1,0 +1,39 @@
+.section-search {
+	background-attachment: fixed;
+	background-color: #EEEEEE;
+	background-image: url('../img/bg-search.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 2rem;
+
+	&__container {
+		align-items: center;
+		justify-content: center;
+		min-height: 300px;
+	}
+
+	.searchbox {
+		margin: 0 auto;
+		max-width: 400px;
+		width: 100%;
+
+		&__title {
+			color: $white;
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin: 0 0 .75rem 0;
+			text-align: center;
+		}
+	}
+
+	#ajaxsearchlite1 {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	#ajaxsearchlite1 .probox .proinput input,
+	div.asl_w .probox .proinput input {
+		color: $black !important;
+	}
+}

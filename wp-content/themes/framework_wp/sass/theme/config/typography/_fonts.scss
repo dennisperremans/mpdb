@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Fonts
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+
+@font-face {
+	font-family: 'open_sansregular';
+	font-style: normal;
+	font-weight: normal;
+
+	src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+	url('../fonts/opensans-regular-webfont.woff') format('woff'),
+	url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+}
+
+
+/* Webfonts
+     ========================================================================== */
+$primary-font: 'open_sansregular', Arial sans-serif;
+$secondary-font: 'Raleway', Arial, sans-serif;
+$base-font: 'open_sansregular';
+
+
+/* Iconfonts
+     ========================================================================== */
+$icon-font-family: 'FontAwesome';
+
+
+/* Defaults
+     ========================================================================== */
+$font-family--base: $base-font;
+$font-family--headings: $secondary-font;
+$font-family--buttons: $primary-font;

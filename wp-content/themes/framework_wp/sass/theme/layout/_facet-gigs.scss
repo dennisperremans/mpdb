@@ -1,0 +1,14 @@
+.facet-gigs {
+	.facetwp-template {
+		.gig {
+			margin-bottom: 1rem;
+
+			@include media-breakpoint-up(md) {
+				float: left;
+				margin-left: 2%;
+				max-width: 48%;
+				width: 100%;
+			}
+		}
+	}
+}

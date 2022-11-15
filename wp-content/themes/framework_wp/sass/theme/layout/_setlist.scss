@@ -1,0 +1,35 @@
+.setlist {
+	background-color: $white;
+
+	&__header {
+		background-color: $white;
+		border-bottom: 1px solid $grey;
+		padding: 1rem;
+
+		&__title {
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	&__content {
+		padding: 1rem;
+
+		&__list {
+			&__item {
+				font-weight: bold;
+
+				&__link {
+					color: $black;
+
+					@include transition(all, .3s, linear);
+
+					&:hover {
+						color: $brand-color--tertiary;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
